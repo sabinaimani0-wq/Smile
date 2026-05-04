@@ -1,0 +1,18 @@
+.logosection{
+    display: flex;
+    align-items: center;
+    background-color: rgb(85, 252, 255);
+}
+.logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    border-color: black;
+    margin-right: 250px;
+}
+.logodescription{
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    text-align: left;
+    font-size: larger;
+}
