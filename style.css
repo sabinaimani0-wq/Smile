@@ -55,10 +55,10 @@ nav a:hover {
 }
 .main2 {
     font-family: 'Arial', sans-serif;
-    font-size: large;
+    font-size: x-large;
     color: #000000;
     position: absolute;
-    top: 250px;
+    top: 300px;
     left: 50px ;
     right: 50px;
 }
@@ -67,7 +67,7 @@ nav a:hover {
     font-size: medium;
     color: #000000;
     position: absolute;
-    top: 290px;
+    top: 350px;
     left: 70px ;
     right: 50px;
     line-height: 30px;
@@ -84,13 +84,13 @@ position: relative;
     font-size: x-large;
     color: #000000;
     position: absolute;
-    top: 450px;
+    top: 530px;
     left: 380px ;
     right: 100px;
 }
 .mood{
     position: absolute;
-    top: 510px;
+    top: 600px;
     left: 350px ;
     right: 50px;
     padding: 20px 5px;
