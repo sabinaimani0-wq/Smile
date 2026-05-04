@@ -100,3 +100,7 @@ position: relative;
     cursor: pointer;
     width: 400px;
 }
+.mood:hover {
+    background-color: rgb(85, 252, 255);
+    color: #000000;
+}
