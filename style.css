@@ -53,6 +53,25 @@ nav a:hover {
     left: 50px ;
     right: 50px;
 }
+.main2 {
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    color: #000000;
+    position: absolute;
+    top: 250px;
+    left: 50px ;
+    right: 50px;
+}
+.features{
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+    color: #000000;
+    position: absolute;
+    top: 290px;
+    left: 70px ;
+    right: 50px;
+    line-height: 30px;
+}
 .blacklist{
 position: relative;
 }
