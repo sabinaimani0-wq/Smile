@@ -34,6 +34,29 @@ nav a:hover {
     color: #ffffff;
 }
 /* Main content styles */
-main {
-    padding: 20px;      
+.main {
     font-family: 'Arial', sans-serif;
+    font-size: medium;
+    color: #000000;
+    position: absolute;
+    top: 100px;
+    left: 50px ;
+    right: 50px;
+    line-height: 25px;
+}
+.main1 {
+    font-family: 'Arial', sans-serif;
+    font-size: large;
+    color: #000000;
+    position: absolute;
+    top: 70px;
+    left: 50px ;
+    right: 50px;
+}
+.blacklist{
+position: relative;
+}
+.blacklist img{
+    width: 100%;
+    height: 900px;
+}
