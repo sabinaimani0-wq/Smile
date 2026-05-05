@@ -1,3 +1,4 @@
+/* for index.html */
 /* Logo styles */
 .logosection{
     display: flex;
@@ -114,3 +115,5 @@ position: relative;
     width: 100%;
     height: 50px;
 }
+
+/* for mood.html */
