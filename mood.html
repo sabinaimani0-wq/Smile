@@ -7,28 +7,42 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <header>
-    <h1>Mood Tracker</h1>
+    <h1 class="moodheader">Mood Tracker</h1>
   </header>
+  <!--Navigation bar-->
+  <nav>
+    <a href="./index.html">About</a>
+    <a href="./mood.html">Mood</a>
+    <a href="./help.html">Help</a>
+  </nav>
+  <!-- background image -->
+   <img src="./background for smile website.jpg" alt="background" class="backgroundimg">
   <body>
-    <form action="">
+       <dialog>
+        <form class="moodform">
       <!-- Mood input -->
-      <label for="mood">How are you feeling today?</label>
+       <div>
+        <label for="mood">How are you feeling today?</label>
       <input type="text" id="mood" name="mood" />
+       </div>
       <!-- Duration input -->
-      <label for="how long">How long have you been feeling this way?</label>
+        <div>
+        <label for="how long">How long have you been feeling this way?</label>
       <input type="text" id="how long" name="how long" />
+      </div>
       <button type="submit">Submit</button>
     </form>
-    <div>
-      <h2>Notepad</h2>
+       </dialog>
+      <div>
+        <h2>How are you feeling?</h2>
       <textarea name="notepad" id="notepad"></textarea>
-    </div>
+      </div>
     <h2>Advice</h2>
     <p>
       Remember, it's okay to have bad days. Take care of yourself and reach out
       to friends or family if you need support.
     </p>
-    <!-- for happy -->
+    <!-- for happy
     <h2>Happy</h2>
     <ul>
       <li>
@@ -69,7 +83,7 @@
       </li>
     </ul>
 
-    <!-- for sad -->
+    for sad
     <h2>Sad</h2>
     <ul>
       <li>
@@ -106,7 +120,7 @@
       </li>
     </ul>
 
-    <!-- for anxiety -->
+    for anxiety
     <h2>Anxiety</h2>
     <ul>
       <li>
@@ -148,7 +162,7 @@
       </li>
     </ul>
 
-    <!-- for anger -->
+    for anger
     <h2>Anger</h2>
     <ul>
       <li>Slow, deep breaths help counteract the physical tension of anger.</li>
@@ -180,7 +194,7 @@
       </li>
     </ul>
 
-    <!-- for fearful -->
+    for fearful
     <h2>Fearful</h2>
     <ul>
       <li>
@@ -216,7 +230,7 @@
       </li>
     </ul>
 
-    <!-- For overhelmed -->
+    For overhelmed
     <h2>Overwhelmed</h2>
     <ul>
       <li>
@@ -245,7 +259,7 @@
       <li>Don't focus on the entire week or month.</li>
     </ul>
 
-    <!-- for stressed -->
+    for stressed
     <h2>Stressed</h2>
     <ul>
       <li>
@@ -277,7 +291,7 @@
       <li>Watch a funny video or talk to a friend to trigger endorphins.</li>
     </ul>
 
-    <!-- for lonliness -->
+    for lonliness
     <h2>Lonely</h2>
     <ul>
       <li>
@@ -310,7 +324,7 @@
       </li>
     </ul>
 
-    <!-- for felling pressured -->
+    for felling pressured
      <h2>Pressured</h2>
      <ul>
         <li>
@@ -342,7 +356,7 @@
         </li>
      </ul>
 
-     <!-- For substance abuse -->
+     For substance abuse
       <h2>Substance Abuse</h2>
       <ul>
         <li>
@@ -368,7 +382,7 @@
         </li>
       </ul>
 
-      <!-- for suicidal thoughts -->
+      for suicidal thoughts
        <h2>Suicidal Thoughts</h2>
        <ul>
         <li>
@@ -402,8 +416,8 @@ If you're in an unsafe location, try and get somewhere safe if you can. </li>
 <li>
 If you're on your own, try and find people to be with if that would help.
         </li>
-       </ul>
-     <!-- the user's thoughts -->
+       </ul> 
+     the user's thoughts
         <h2>Your Thoughts</h2>
         <p>
             What do you think you could do to make you feel better? <br> Put your thoughts out to see if you can actually make feel much better
