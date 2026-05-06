@@ -16,7 +16,7 @@
 .logodescription{   
     font-family: 'Arial', sans-serif;
     color: #000000;
-    text-align: center;
+    text-align: 20px;
     font-size: large;
 }
 /* Navigation bar styles */
@@ -39,7 +39,7 @@ nav a:hover {
     color: #ffffff;
 }
 /* Main content styles */
-.main {
+.aboutdescription {
     font-family: 'Arial', sans-serif;
     font-size: 19px;
     color: #000000;
@@ -50,7 +50,7 @@ nav a:hover {
     line-height: 25px;
     text-align: center;
 }
-.main1 {
+.abouttitle {
     font-family: 'Arial', sans-serif;
     font-size: 40px;
     color: #000000;
@@ -59,7 +59,7 @@ nav a:hover {
     left: 500px ;
     right: 50px;
 }
-.main2 {
+.featurestitle {
     font-family: 'Arial', sans-serif;
     font-size: 40px;
     color: #000000;
@@ -68,7 +68,7 @@ nav a:hover {
     left: 50px ;
     right: 50px;
 }
-.features{
+.featuresdescription{
     font-family: 'Arial', sans-serif;
     font-size: 19px;
     color: #000000;
@@ -81,7 +81,7 @@ nav a:hover {
 .blacklist{
 position: relative;
 }   
-.main3{
+.endofpagetitle{
     font-family: 'Arial', sans-serif;
     font-size: 40px;
     color: #000000;
@@ -89,7 +89,7 @@ position: relative;
     top: 500px;
     left: 300px;
 }
-.mood{
+.moodbutton{
     text-align: center;
     text-decoration: none;
     font-family: Arial,sans-serif;
@@ -104,7 +104,7 @@ position: relative;
     cursor: pointer;
     width: 400px;
 }
-.mood:hover {
+.moodbutton:hover {
     background-color: rgb(85, 252, 255);
     color: #000000;
 }
