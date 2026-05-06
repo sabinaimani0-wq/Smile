@@ -144,34 +144,34 @@ position: relative;
     color: #000000;
 }
 .moodform input[type="text"]{
-    width: 50%;
+    width: 100%;
     height: 30px;
     font-size: medium;
     font-family: 'Arial', sans-serif;
     background-color: #ece8e8;
 }
-.feelingstaker{
+#notepaddescription{
     position: absolute;
-    font-size: x-large;
-    top: 200px;
-    left: 400px;
+    font-size: 24px;
+    top: 500px;
+    left: 50px ;
+    right: 50px;
 }
-#notepad-container{
-    position: fixed;
-    top: 300px;
-    left: 300px ;
-    right: 300px;
+#notepadcontainer{
+    margin-top: 400px;
+    position: absolute;
+    left: 50px;
 }
 #notepad{
-    width: 100%;
+    width: 550%;
     height: 100px;
     font-size: medium;
     line-height: 30px;
     font-family: 'Arial', sans-serif;
     border-radius: 5px;
     background-color: #ffffff;
-    background-image: linear-gradient(to right, #ee0505 4px, transparent 2px);
 }
+
 body{
     background-image:url(./background\ for\ smile\ website.jpg);
     background-attachment: cover;
