@@ -1,257 +1,257 @@
 /* for index.html */
 
 /* Logo styles */
-.logosection{
-    display: flex;
-    align-items: center;
-    background-color: rgb(85, 252, 255);
+.logosection {
+  display: flex;
+  align-items: center;
+  background-color: rgb(85, 252, 255);
 }
-.logo{
-    width: 130px;
-    height: 130px;
-    border-radius: 100px;
-    border-color: black;
-    margin-right: 250px;
+.logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  border-color: black;
+  margin-right: 250px;
 }
-.logodescription{   
-    font-family: 'Arial', sans-serif;
-    color: #000000;
-    text-align: 20px;
-    font-size: large;
+.logodescription {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  font-size: large;
+  text-align: center;
 }
 /* Navigation bar styles */
 nav {
-    background-color: rgb(22, 189, 192);
-    padding: 20px  20px;
-    margin: 20px 50;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    font-family: 'Arial', sans-serif;
-    font-size: large;
+  background-color: rgb(22, 189, 192);
+  padding: 20px 20px;
+  margin: 20px 50;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Arial", sans-serif;
+  font-size: large;
 }
 nav a {
-    color: #000000;
-    text-decoration: none;
-    margin: 0 15px;
+  color: #000000;
+  text-decoration: none;
+  margin: 0 15px;
 }
 nav a:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
 /* Main content styles */
 .aboutdescription {
-    font-family: 'Arial', sans-serif;
-    font-size: 19px;
-    color: #000000;
-    position: absolute;
-    top: 60px;
-    left: 50px ;
-    right: 50px;
-    line-height: 25px;
-    text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 19px;
+  color: #000000;
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  right: 50px;
+  line-height: 25px;
+  text-align: center;
 }
 .abouttitle {
-    font-family: 'Arial', sans-serif;
-    font-size: 40px;
-    color: #000000;
-    position: absolute;
-    top: 1px;
-    left: 500px ;
-    right: 50px;
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  color: #000000;
+  position: absolute;
+  top: 1px;
+  left: 500px;
+  right: 50px;
 }
 .featurestitle {
-    font-family: 'Arial', sans-serif;
-    font-size: 40px;
-    color: #000000;
-    position: absolute;
-    top: 250px;
-    left: 50px ;
-    right: 50px;
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  color: #000000;
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  right: 50px;
 }
-.featuresdescription{
-    font-family: 'Arial', sans-serif;
-    font-size: 19px;
-    color: #000000;
-    position: absolute;
-    top: 350px;
-    left: 70px ;
-    right: 50px;
-    line-height: 30px;
+.featuresdescription {
+  font-family: "Arial", sans-serif;
+  font-size: 19px;
+  color: #000000;
+  position: absolute;
+  top: 350px;
+  left: 70px;
+  right: 50px;
+  line-height: 30px;
 }
-.blacklist{
-position: relative;
-}   
-.endofpagetitle{
-    font-family: 'Arial', sans-serif;
-    font-size: 40px;
-    color: #000000;
-    position: absolute;
-    top: 500px;
-    left: 300px;
+.blacklist {
+  position: relative;
 }
-.moodbutton{
-    text-align: center;
-    text-decoration: none;
-    font-family: Arial,sans-serif;
-    position: absolute;
-    top: 600px;
-    left: 350px ;
-    right: 50px;
-    padding: 20px 5px;
-    font-size: large;
-    background-color: rgb(22, 189, 192);
-    color: #000000;
-    cursor: pointer;
-    width: 400px;
+.endofpagetitle {
+  font-family: "Arial", sans-serif;
+  font-size: 40px;
+  color: #000000;
+  position: absolute;
+  top: 500px;
+  left: 300px;
+}
+.moodbutton {
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 600px;
+  left: 350px;
+  right: 50px;
+  padding: 20px 5px;
+  font-size: large;
+  background-color: rgb(22, 189, 192);
+  color: #000000;
+  cursor: pointer;
+  width: 400px;
 }
 .moodbutton:hover {
-    background-color: rgb(85, 252, 255);
-    color: #000000;
+  background-color: rgb(85, 252, 255);
+  color: #000000;
 }
 
 /* for mood.html */
-.moodheader{
-    font-family: 'Arial', sans-serif;
-    color: #000000;
-    text-align: center;
-    font-size: 30px;
-    background-color: rgb(22, 212, 215);
-   padding: 20px 10px;
+.moodformdescription {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  font-size: 24px;
+  margin-top: 5px;
 }
-.container{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
+.moodform {
+  position: absolute;
+  font-size: large;
+  color: #000000;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 80px;
 }
-.moodform{
-    position: absolute;
-    font-size:large;
-    color: #000000;
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    margin-top: 80px;
+.moodform input[type="text"] {
+  width: 100%;
+  height: 30px;
+  font-size: medium;
+  font-family: "Arial", sans-serif;
+  background-color: #ece8e8;
 }
-/* .moodform input[type="text"]{
-    width: 100%;
-    height: 30px;
-    font-size: medium;
-    font-family: 'Arial', sans-serif;
-    background-color: #ece8e8;
-} */
-.moodformbutton{
-    width: 100px;
-    height: 40px;
-    font-size: medium;
-    background-color: rgb(22, 189, 192);
-    color: #000000;
-    cursor: pointer;
-    align-items: center;
+.moodformbutton {
+  width: 100px;
+  height: 40px;
+  font-size: medium;
+  background-color: rgb(22, 189, 192);
+  color: #000000;
+  cursor: pointer;
+  align-items: center;
 }
-.moodformbutton:hover{
-    background-color: rgb(85, 252, 255);
-    color: #000000;
+.moodformbutton:hover {
+  background-color: rgb(85, 252, 255);
+  color: #000000;
 }
-.moodform input[type="text"]{
-    width: 100%;
-    height: 30px;
-    font-size: medium;
-    font-family: 'Arial', sans-serif;
-    background-color: #ece8e8;
- }
- /* notepadsection */
- .notepadcontainer{
-    position: absolute;
-margin: 0 auto; 
-margin-top: 100px;   
-}
-   #notepaddescription{
-    position: absolute;
-    font-size: 24px;
-   max-width: 600px;
-}
- /* #notepad{
-    width: 550%;
-    height: 100px;
-    font-size: medium;
-    line-height: 30px;
-    font-family: 'Arial', sans-serif;
-    border-radius: 5px;
-    background-color: #ffffff;
-}   */
 
-body{
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-image:url(./background\ for\ smile\ website.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+/* notepadsection */
+#notepadcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  padding: 20px;
 }
-.moodending{
+#notepaddescription {
+  max-width: 700px;
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+textarea {
+  width: 80%;
+  max-width: 800px;
+  height: 300px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 40px;
+  background-color: #ffffff;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 39px,
+    #131212 40px
+  );
+  background-position-y: 20px;
+  border-radius: 50px;
+}
+
+body {
+  display: flexbox;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-image: url(./background\ for\ smile\ website.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* .moodending{
     font-family: 'Arial', sans-serif;
     color: #631010;
     text-align: center;
     font-size: 20px;
     top:5000px;
-}
+} */
 
 /* help section */
-header{
-    font-family: 'Arial', sans-serif;
-    color: #000000;
-    text-align: center;
-    font-size: x-large;
-    background-color: rgb(22, 212, 215);
-    padding: 10px 5px;
+header {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: x-large;
+  background-color: rgb(22, 212, 215);
+  padding: 10px 5px;
 }
-.sitedescription{
-    font-family: 'Arial', sans-serif;
-    color: #000000;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
+.sitedescription {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
 }
-.sitesforhelp{
-    font-family: 'Arial', sans-serif;
-    color: #000000;
-    font-size: 20px;
-    margin-top: 20px;
-    line-height: 29px;
+.sitesforhelp {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 29px;
 }
-.sitesforhelp a{
-    color: #072194;
-    text-decoration: none;
+.sitesforhelp a {
+  color: #072194;
+  text-decoration: none;
 }
-.sitesforhelp a:hover{
-    color: rgb(233, 37, 16);
+.sitesforhelp a:hover {
+  color: rgb(233, 37, 16);
 }
-ul{
-    list-style-type: square;
-    list-style-position: inside;
+ul {
+  list-style-type: square;
+  list-style-position: inside;
 }
-.contactsection{
-    font-family: 'Arial', sans-serif;
-    color: #020304;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
+.contactsection {
+  font-family: "Arial", sans-serif;
+  color: #020304;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
 }
-.contacts{
-    font-family: 'Arial', sans-serif;
-    color: #0b0b9f;
-    font-size: 20px;
-    margin-top: 20px;
-    line-height: 29px;
+.contacts {
+  font-family: "Arial", sans-serif;
+  color: #0b0b9f;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 29px;
 }
-ul li::marker{
-    color: #000000;
+ul li::marker {
+  color: #000000;
 }
-.conclusion{
-    font-family: 'Arial', sans-serif;
-    color: #000000;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 50px;
+.conclusion {
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
 }
