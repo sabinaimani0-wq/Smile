@@ -22,7 +22,9 @@
 /* Navigation bar styles */
 nav {
     background-color: rgb(22, 189, 192);
-    padding: 20px  10px;
+    padding: 20px  20px;
+    margin: 20px 50;
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
     font-family: 'Arial', sans-serif;
@@ -31,6 +33,7 @@ nav {
 nav a {
     color: #000000;
     text-decoration: none;
+    margin: 0 15px;
 }
 nav a:hover {
     color: #ffffff;
@@ -111,19 +114,15 @@ position: relative;
     font-family: 'Arial', sans-serif;
     color: #000000;
     text-align: center;
-    font-size: xx-large;
+    font-size: 30px;
     background-color: rgb(22, 212, 215);
    padding: 20px 10px;
 }
-.backgroundimg{
-    width: 100%;
-    height: auto;
-    top: 10px;
-}
-.moodcontainer{
+.container{
     max-width: 800px;
     margin: 0 auto;
-
+    padding: 20px;
+    border-radius: 10px;
 }
 .moodform{
     position: absolute;
@@ -134,6 +133,13 @@ position: relative;
     flex-direction: column;
     margin-top: 80px;
 }
+/* .moodform input[type="text"]{
+    width: 100%;
+    height: 30px;
+    font-size: medium;
+    font-family: 'Arial', sans-serif;
+    background-color: #ece8e8;
+} */
 .moodformbutton{
     width: 100px;
     height: 40px;
@@ -153,20 +159,19 @@ position: relative;
     font-size: medium;
     font-family: 'Arial', sans-serif;
     background-color: #ece8e8;
+ }
+ /* notepadsection */
+ .notepadcontainer{
+    position: absolute;
+margin: 0 auto; 
+margin-top: 100px;   
 }
-#notepaddescription{
+   #notepaddescription{
     position: absolute;
     font-size: 24px;
-    top: 500px;
-    left: 50px ;
-    right: 50px;
+   max-width: 600px;
 }
-#notepadcontainer{
-    margin-top: 400px;
-    position: absolute;
-    left: 50px;
-}
-#notepad{
+ /* #notepad{
     width: 550%;
     height: 100px;
     font-size: medium;
@@ -174,11 +179,13 @@ position: relative;
     font-family: 'Arial', sans-serif;
     border-radius: 5px;
     background-color: #ffffff;
-}
+}   */
 
 body{
+    margin: 0;
+    font-family: 'Arial', sans-serif;
     background-image:url(./background\ for\ smile\ website.jpg);
-    background-attachment: cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
