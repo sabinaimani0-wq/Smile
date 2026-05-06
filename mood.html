@@ -17,7 +17,8 @@
     <a href="./mood.html">Mood</a>
     <a href="./help.html">Help</a>
   </nav>
-        <form class="moodform">
+        <main class="moodcontainer">
+          <form class="moodform">
       <!-- Mood input -->
        <div>
         <label for="mood">How are you feeling today?</label>
@@ -25,11 +26,12 @@
        </div>
       <!-- Duration input -->
         <div>
-        <label for="how long">How long have you been feeling this way?</label>
-      <input type="text" id="how long" name="how long" />
+        <label for="howlong">How long have you been feeling this way?</label>
+      <input type="text" id="howlong" name="howlong" />
       </div>
       <button class="moodformbutton" type="submit">Submit</button>
     </form>
+        </main>
      <p id="notepaddescription">
             If you want to write down your thoughts, feelings, or anything else that comes to mind, feel free to use the notepad below. Sometimes putting our thoughts on paper can help us process our emotions and gain clarity.
         </p>
@@ -423,7 +425,7 @@ If you're on your own, try and find people to be with if that would help.
         </p>
         <textarea name="your thoughts" id="your thoughts"></textarea> --> 
 
-        <p> In case none of this solution works press the button below for further help </p>
-        <button link rel="third page" href="./help.html">For Further Help</button>
+        <!-- <p class="moodending"> In case none of this solution works press the button below for further help </p>
+        <button onclick='window.location.href='./help.html'>For Further Help</button> -->
   </body>
 </html>
