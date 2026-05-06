@@ -39,14 +39,27 @@ nav a:hover {
   color: #ffffff;
 }
 /* Main content styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  font-family: "Arial", sans-serif;
+  background-image: url(./background\ for\ smile\ website.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 .aboutdescription {
   font-family: "Arial", sans-serif;
   font-size: 19px;
   color: #000000;
-  position: absolute;
-  top: 60px;
-  left: 50px;
-  right: 50px;
   line-height: 25px;
   text-align: center;
 }
@@ -54,28 +67,19 @@ nav a:hover {
   font-family: "Arial", sans-serif;
   font-size: 40px;
   color: #000000;
-  position: absolute;
-  top: 1px;
-  left: 500px;
-  right: 50px;
+  text-align: center;
+
 }
 .featurestitle {
   font-family: "Arial", sans-serif;
   font-size: 40px;
   color: #000000;
-  position: absolute;
-  top: 250px;
-  left: 50px;
-  right: 50px;
+  text-align: center;
 }
 .featuresdescription {
   font-family: "Arial", sans-serif;
   font-size: 19px;
   color: #000000;
-  position: absolute;
-  top: 350px;
-  left: 70px;
-  right: 50px;
   line-height: 30px;
 }
 .blacklist {
@@ -85,24 +89,20 @@ nav a:hover {
   font-family: "Arial", sans-serif;
   font-size: 40px;
   color: #000000;
-  position: absolute;
-  top: 500px;
-  left: 300px;
+  text-align: center;
 }
 .moodbutton {
   text-align: center;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  position: absolute;
-  top: 600px;
-  left: 350px;
-  right: 50px;
   padding: 20px 5px;
   font-size: large;
   background-color: rgb(22, 189, 192);
   color: #000000;
   cursor: pointer;
   width: 400px;
+  display: block;
+  margin: 0 auto;
 }
 .moodbutton:hover {
   background-color: rgb(85, 252, 255);
@@ -140,6 +140,8 @@ nav a:hover {
   background-color: rgb(22, 189, 192);
   color: #000000;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
 .moodformbutton:hover {
   background-color: rgb(85, 252, 255);
@@ -208,7 +210,17 @@ main{
     color: #000000;
     font-size: 30px;
 }
-
+.helpbutton{
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  padding: 20px 5px;
+  font-size: large;
+  background-color: rgb(22, 189, 192);
+  color: #000000;
+  cursor: pointer;
+  width: 400px;
+}
 /* help section */
 header {
   font-family: "Arial", sans-serif;
