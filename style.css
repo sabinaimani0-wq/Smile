@@ -1,8 +1,10 @@
 /* for index.html */
-
-.hidden {
-  display: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 /* Logo styles */
 .logosection {
   display: flex;
@@ -10,7 +12,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(85, 252, 255);
-  padding: 20px;
+  padding: 10px;
   gap: 10px;
   text-align: center;
 }
@@ -33,12 +35,11 @@
 nav {
   background-color: rgb(22, 189, 192);
   padding: 20px;
-  margin: 20px auto;
+  margin: 0px 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 5px;
+  gap: 50px;
   max-width: 1000px;
   font-family: "Arial", sans-serif;
   font-size: large;
@@ -63,40 +64,17 @@ main {
   flex: 1;
 }
 
-.aboutdescription {
-  font-family: "Arial", sans-serif;
-  font-size: 19px;
-  color: #000000;
-  line-height: 25px;
-  text-align: center;
+.card{
+  padding:25px;
+  margin-bottom: 25px;
+  border-radius: 15px;
 }
-.abouttitle {
-  font-family: "Arial", sans-serif;
-  font-size: 40px;
-  color: #000000;
-  text-align: center;
+.card h2{
+  margin-bottom: 15ps;
+  color: #072194;
 }
-.featurestitle {
-  font-family: "Arial", sans-serif;
-  font-size: 40px;
-  color: #000000;
-  text-align: center;
-}
-.featuresdescription {
-  font-family: "Arial", sans-serif;
-  font-size: 19px;
-  color: #000000;
-  line-height: 30px;
-}
-.blacklist {
-  position: relative;
-}
-.endofpagetitle {
-  font-family: "Arial", sans-serif;
-  font-size: 40px;
-  color: #000000;
-  text-align: center;
-}
+
+/* buttons */
 .moodbutton {
   text-align: center;
   text-decoration: none;
@@ -115,9 +93,9 @@ main {
   background-color: rgb(85, 252, 255);
   color: #000000;
 }
-/* =========================
-   TABLET (≤ 768px)
-========================= */
+
+/* Responsive section */
+/* TABLET (≤ 768px) */
 @media (max-width: 768px) {
   .abouttitle,
   .featurestitle,
@@ -137,9 +115,7 @@ main {
   }
 }
 
-/* =========================
-   MOBILE (≤ 480px)
-========================= */
+/* MOBILE (≤ 480px) */
 @media (max-width: 480px) {
   nav {
     display: flex;
@@ -163,68 +139,25 @@ main {
     font-size: 14px;
   }
 }
-
-/* for mood.html */
-.moodformdescription {
-  font-family: "Arial", sans-serif;
-  color: #000000;
-  font-size: 24px;
-  margin-top: 5px;
-}
-.moodform {
-  font-size: large;
-  color: #000000;
+ /* form */
+ #popupForm{
   display: flex;
-  gap: 10px;
-  text-align: center;
   flex-direction: column;
-  margin-top: 80px;
-}
-.moodform input[type="text"] {
-  width: 50%;
-  height: 30px;
-  font-size: medium;
-  font-family: "Arial", sans-serif;
-  background-color: #ece8e8;
-}
-.moodformbutton {
-  align-self: center;
+  gap: 15px;
+ }
+ select,input,textarea{
   width: 100px;
-  height: 40px;
-  font-size: medium;
-  background-color: rgb(22, 189, 192);
-  color: #000000;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-}
-.moodformbutton:hover {
-  background-color: rgb(85, 252, 255);
-  color: #000000;
-}
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 30px 20px;
+ }
+ textarea{
+  min: height 200px;
+  resize: vertical;
+ }
 
-/* for form popup */
-#popup{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#popupContent{
-  background:white;
-  padding:20px ;
-  border-radius:10px;
-  width: 100px;
-  max-width: 400px;
-}
-button{
-  background-color: rgb(22, 189, 192);
-  padding: 10px 20px;
-  cursor: pointer;
-}
+
 
 /* notepadsection */
 #notepadcontainer {
@@ -279,28 +212,14 @@ body {
   height: 100%;
   margin: 0;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
+
 #adviceheader {
   text-align: center;
   font-family: "Arial", sans-serif;
   color: #000000;
   font-size: 30px;
 }
-.helpbutton {
-  text-align: center;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  padding: 20px 5px;
-  font-size: large;
-  background-color: rgb(22, 189, 192);
-  color: #000000;
-  cursor: pointer;
-  width: 400px;
-}
+
 /* help section */
 header {
   font-family: "Arial", sans-serif;
@@ -325,7 +244,7 @@ header {
   line-height: 29px;
 }
 .sitesforhelp a {
-  color: #072194;
+  color: #0b1851;
   text-decoration: none;
 }
 .sitesforhelp a:hover {
@@ -342,13 +261,7 @@ ul {
   font-size: 30px;
   margin-top: 50px;
 }
-.contacts {
-  font-family: "Arial", sans-serif;
-  color: #0b0b9f;
-  font-size: 20px;
-  margin-top: 20px;
-  line-height: 29px;
-}
+
 ul li::marker {
   color: #000000;
 }
@@ -358,4 +271,10 @@ ul li::marker {
   text-align: center;
   font-size: 30px;
   margin-top: 50px;
+}
+footer{
+  text-align: center;
+  padding: 30px;
+  background-color: blueviolet;
+  color: rgb(229, 135, 13);
 }

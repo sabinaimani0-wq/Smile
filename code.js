@@ -1,30 +1,25 @@
 // get popup elements
 document.addEventListener("DOMContentLoaded", () => {
-  const showFormButton = document.getElementById("showFormButton");
-  const moodFormSection = document.getElementById("moodFormSection");
+  const form = document.getElementById("moodForm");
 
-  // open popup when button is clicked
-  if (showFormButton && moodFormSection) {
-    showFormButton.addEventListener("click", () => {
-      moodFormSection.classList.remove("hidden");
-    });
+  if (form){
+    form.addEventListener("submit",(event) =>{
+      event.preventDefault();
+      const mood = document.getElementById("popupMood").value;
+      const duration = document.getElementById("popupDuration").value;
+      const result = document.getElementById("popupResult");
+    } 
+    )
   }
 
-  // close when clicking outside popup
-  const form = document.getElementById("moodForm");
-if (form){
-    form.addEventListener("submit",(event)=>{
-        event.preventDefault();
-    const mood = document.getElementById("popupMood").value;
-    const duration = document.getElementById("popupDuration").value;
-   const result = document.getElementById("popupResult");
-
     // form validation
-    if (!mood || !duration) {
+    if (mood === "" || duration === "") {
       result.textContent = "Please fill in all fields.";
       result.style.color = "red";
       return;
     }
+    // save on local storage
+
     localStorage.setItem("mood", mood);
     localStorage.setItem("duration", duration);
     
@@ -34,15 +29,26 @@ if (form){
     setTimeout(() => {
       window.location.href = "./mood.html";
     }, 1000);
+
     });
+  
   // handle form submission
   const savedMood = localStorage.getItem("mood");
   const savedDuration = localStorage.getItem("duration");
       
-  const displyyMood = document.getElementById("displayMood");
+  //display mood 
+  const displayMood = document.getElementById("displayMood");
   const displayDuration = document.getElementById("displayDuration");
-  const adviceText = document.getElementById("advicetext");
      
+if(displayMood && savedMood){
+  displayMood.textContent =`Mood: ${savedMood}`;
+}
+
+if (displayDuration && savedDuration ){
+  displayDuration.textContent =`Duration: ${savedDuration}`
+}
+
+// Advice
   const advice = {
     happy: `  
      Engage in regular exercise, such as walking or stretching, to release
@@ -150,7 +156,7 @@ Actively acknowledge good things in
         Eat regular, balanced meals with complex carbs, protein, and healthy
         fats to stabilize mood.,`
 
-        fear : `
+        fearful : `
              Try the 4-7-8 method: Breathe in for four seconds, hold for seven, and
         exhale for eight.
     
@@ -242,19 +248,22 @@ Exercise releases endorphins that improve mood.
         Use soothing sounds play music, podcasts, or the radio to make your home feel less quiet.
     
         Join a group find local clubs, classes, or community groups to meet new people with shared interests.
-      ,`
+      `,
 
   };
   
   // DISPLAY ADVICE
-  if (displayMood && savedMood) {
-    display.textContent = `Mood: ${savedMood}`;
+  const adviceText = document.getElementById("notepad")
+  if (adviceText && savedMood) {
+    adviceText.textContent = advice[savedMood];
   }
-  if (displayDuration && savedDuration)
-  {
-    displayDuration.textContent = `Duration: ${savedDuration}`;
+  
+  // notepad
+  const notepad = document.getElementById("notepad")
+
+  if (notepad){
+    notepad.value = localStorage("input",() =>{
+      localStorage.setItem("notepad",notepad.value);
+    }
+    );
   }
-  if ( adviceText && savedMood){
-    adviceText.textContent = advice[savedMood]
-  }
-}
