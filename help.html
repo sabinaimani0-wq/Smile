@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smile</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <header>
-    <h1>
-        <strong>Help</strong> 
-    </h1>
-</header>
- <!--Navigation bar-->
+  <!-- header section -->
+  <header >
+    <div>
+      <h1>
+        <strong> Mood</strong>  
+      </h1>
+    </div>
+  </header>
+  <!-- navigation bar -->
   <nav>
     <a href="./index.html">About</a>
     <a href="./mood.html">Mood</a>
     <a href="./help.html">Help</a>
   </nav>
-  
-    <p class="sitedescription">For any additional help please click any of the following links :</p>
-    <ul class="sitesforhelp">
-        <li>
-            <a href="https://www.nami.org/">National Alliance on Mental Illness</a>
-        </li>
-        <li>
-            <a href="https://www.nimh.nih.gov/health/topics">National Institute of Mental Health</a>
-        </li>
-        <li>
-            <a href="https://www.helpguide.org/">Help Guide</a>
-        </li>
-        <li>
-            <a href="https://www.nhs.uk/every-mind-matters/">Every Mind Matters</a>
-        </li>
-        <li>
-            <a href="https://psychcentral.com/">Psych Central</a>
-        </li>
-        <li>
-            <a href="https://headspace.org.au/"> Headspace </a>
-        </li>
-    </ul>
+<main>
+  <section class="moodform">
+    <h2 class="moodformdescription">
+      Tell us how you are feeling by filling out this form:
+    </h2>
+    <form action="">
+      How are you feeling today? <br>
+      <input type="text" name="mood" id="mood" placeholder="Pick one of the moods below"><br>
+      How long have you been feeling this way? <br>
+      <input type="text" name="duration" id="duration" placeholder="Put the duration of your mood here"><br>
+    </form>
+    <button class="moodformbutton">Submit</button>
+  </section>
 
-    <p class="contactsection">For any additional help please contact any of the following :</p>
-    <ul class="contacts">
-        <li>
-            Befrienders Kenya (Suicide Prevention): 0722 178 177 / 0734 312 300 (Mon–Fri)
-        </li>
-        <li>
-            Kenya Red Cross Society: 1199 (Available 24/7)
-        </li>
-        <li>
-            Niskize Crisis Hotline: 0900 620 800 / 0718 227 440 (Psychological support)
-        </li>
-        <li>
-            National Child Helpline: 116 (24/7 Support)
-        </li>
-        <li>
-            NACADA (Substance Abuse): 1192 (Toll-Free)
-        </li>
-        <li>
-            LVCT (Mental Health/General Counselling): 1190
-        </li>
-        <li>
-            Huduma Kenya Telecounselling: 1919
-        </li>
-    </ul>
-    <p class="conclusion"> <strong>IT'S GOOD THAT YOUR THINKING ABOUT HELP. <br> WE ARE HERE ALWAYS IF YOU NEED ANYTHING.</strong></p>
+  <section id="notepadcontainer">
+    <p id="notpaddescription">
+      Write out your thoughts to releave some pressure from your mind. <br> Just use this space to vent out some of your feelings and thoughts. <br> It is a safe space for you to express yourself without any judgement.
+    </p>
+    <textarea placeholder="Write out your thoughts here" id="notepad"></textarea>
+  </section>
+
+  <!-- Advice Section -->
+  <section>
+    <h2 id="adviceheader">
+      Use this advice to feel a little better:
+    </h2>
+    <p id="advicetext"></p>
+  </section>
+
+  <!-- link mood.html to help.html -->
+  <section>
+    <a href="./help.html" class="helpbutton">Click here for further help</a>
+  </section>
+</main>
+
 </body>
 </html>
