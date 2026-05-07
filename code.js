@@ -1,21 +1,22 @@
 // get popup elements
-
+document.addEventListener("DOMContentLoaded", () => {
 const openPopupButton= document.getElementById("openPopup");
 const popup = document.getElementById("popup");
-const closePopupButton = document.getElementById("closePopup");
 
 // open popup when button is clicked
-if (openPopupButton) {
+if (openPopupButton && popup) {
   openPopupButton.addEventListener("click", () => {
     popup.classList.remove("hidden");
   });
 }
 
-// close popup when close button is clicked
-if (closePopupButton) {
-  closePopupButton.addEventListener("click", () => {
-    popup.classList.add("hidden");
-  });
+// close when clicking outside popup
+if(popup){
+    popup.addEventListener("click", (event) => {
+        if (event.target === popup) {
+            popup.classList.add("hidden");
+        }
+    }); 
 }
 
 // handle form submission
@@ -24,11 +25,11 @@ if (popupForm) {
   popupForm.addEventListener("submit", function(event){
     event.preventDefault();
     const mood = document.getElementById("popupMood").value;
-    const duration = document.getElementById("popupDuration").value;
-    const result = `You are feeling ${mood} for ${duration}.`;
-    document.getElementById("popupResult").textContent = result;
-  
-    // form validation
+const duration = document.getElementById("popupDuration").value;
+const popupResult = document.getElementById("popupResult");  
+    
+
+// form validation
     if(mood===""|| duration===""){
         popupResult.textContent = "Please fill in all fields.";
         popupResult.style.color = "red";
@@ -58,13 +59,16 @@ if (displayMood && savedMood) {
 }   
 // display duration 
 if (displayDuration && savedDuration) {
-  displayDuration.textContent = savedDuration;
+  displayDuration.textContent = `Duration: ${savedDuration}`;
 }
 
+if(adviceText && savedMood){
+    const cleanMood = savedMood;
+    adviceText.textContent = advice[cleanMood]}
 // advice object
 const advice = {
-    happy:
-'   Engage in regular exercise, such as walking or stretching, to release
+    happy:`  
+     Engage in regular exercise, such as walking or stretching, to release
         endorphins, reduce stress, and boost mood.
 Actively acknowledge good things in
          your life, even small ones like a
@@ -87,10 +91,9 @@ Actively acknowledge good things in
         and loved ones.
       
         Reframe negative thoughts and consciously choose to focus on hopeful,
-        constructive perspectives.',
+        constructive perspectives.`,
 
-        sad:
-        '
+        sad:`
             Don't repress it. Acknowledge your feelings, cry if needed, and remind
         yourself that it is okay to have bad days.
       
@@ -114,10 +117,9 @@ Actively acknowledge good things in
         Find something to laugh at to help ease physical and mental tension.
     
         Focus on three good things that happened in your day to shift your
-        perspective.
-        '
-}
-         Anxiety:'
+        perspective.`,
+
+         anxious:`
     
         Place one hand on your stomach and breathe in slowly to fill it up like
         a balloon, then exhale slowly to release tension.
@@ -146,23 +148,23 @@ Actively acknowledge good things in
         consider a more balanced perspective.
      
         Write down your feelings to process emotions rather than keeping them
-        bottled up.'
+        bottled up.`};
 
         // DISPLAY ADVICE
-        if(adviceText && saveMood){
+        if(adviceText && savedMood){
             adviceText.textContent= advice[savedMood];
         }
         // notepad functionality
         const notepad = document.getElementById("notepad");
         if(notepad){
             notepad.value= localStorage.getItem("notepad") || "";
-notepad.addEventListener("input",(=> {
+notepad.addEventListener("input",()=> {
     localStorage.setItem("notepad", notepad.value);
-}));}
+});}
 
 function clearMoodData(){
     localStorage.removeItem("mood");
     localStorage.removeItem("duration");
-    localStorage.removeItem("notes");
+    localStorage.removeItem("notepad");
 }
-
+});

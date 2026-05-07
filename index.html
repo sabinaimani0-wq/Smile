@@ -76,17 +76,17 @@
         </button>
     </main>
     <!-- menu popup -->
-    <section id="popup">
+    <section id="popup" class="hidden">
       <div id="popupContent">
         <h2>Mood checker</h2>
 
         <form id="popupForm">
           <!-- mood  -->
 
-          <label for="popupMood"> How are you feeling today? </label>
-          <br /><br />
+          <button for="popupMood"> How are you feeling today? </button>
+          <br><br>
 
-          <select name="" id="popupmood">
+          <select name="" id="popupMood">
             <option value="">--Choose your mood--</option>
             <option value="happy">Happy</option>
             <option value="sad">Sad</option>
@@ -106,11 +106,12 @@
           <label for="popupDuration">
             How long have you been feeling this way?
           </label>
-          <br /><br />
+          <br><br>
+
           <input type="text" id="popupDuration" placeholder="Enter duration" />
           <br><br>
 
-          <p id="popupResult"></p>
+          <p id="popupResult" ></p>
 
           <button type="submit">Submit</button>
         </form>
