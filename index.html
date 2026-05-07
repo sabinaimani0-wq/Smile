@@ -58,33 +58,31 @@
       <h2>
         How are you feeling today?
       </h2>
+<form id="popupForm"> 
+   <!-- mood --> 
+     <label for="popupmood">  
+        How are you feeling today? 
+       </label>  
+       <select id="popupmood"> 
+           <option value="">--Select your mood--</option>  
+             <option value="happy">Happy</option> 
+                <option value="sad">Sad</option>    
+                <option value="angry">Angry</option>   
+                 <option value="anxious">Anxious</option> 
+                    <option value="stressed">Stressed</option>  
+                      <option value="fearful">Fearful</option>  
+                        <option value="overwhelmed">Overwhelmed</option>  
+                          <option value="lonely">Lonely</option>  
+                        </select>  
+                        <!-- duration -->
+                           <label for="popupDuration">
+                                How long have you been feeling this way?  
+                              </label>
+                                <input    type="text"    id="popupDuration"    placeholder="Enter duration"  /> 
+                                 <p id="popupResult"></p> 
+                                  <button type="submit" class="moodbutton">    Submit  </button>
+                                </form>
 
-      <form id="popupForm">
-          <!-- mood -->
-          <label for="popupmood"> How are you feeling today? </label>
-          
-          <select name="" id="popupmood">
-            <option value="">--Select your mood--</option>
-            <option value="happy">Happy</option>
-            <option value="sad">Sad</option>
-            <option value="angry">Angry</option>
-            <option value="anxious">Anxious</option>
-            <option value="stressed">Stressed</option>
-            <option value="fearful">Fearful</option>
-            <option value="overwhelmed">Overwhelmed</option>
-            <option value="lonely">Lonely</option>
-            <option value="substanceabuse">Substance Abuse</option>
-            <option value="suicidalthoughts">Suicidal Thoughts</option>
-          </select>
-    
-    <!-- duration of the mood -->
-          <label for="popupDuration">
-            How long have you been feeling this way?
-          </label>
-              <input type="text" id="popupDuration" placeholder="Enter duration" />
-        <p id="popupResult"></p>
-          <button type="submit" class="moodbutton">Submit</button>
-        </form>
       </main>
     
     <footer>

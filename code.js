@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (form) {
     form.addEventListener("submit", (event) => {
+      console.log("formworking")
       event.preventDefault();
 
       const mood = document.getElementById("popupmood").value;
@@ -83,4 +84,4 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("notepad", notepad.value);
     });
   }
-});redoing the 
+}); 
