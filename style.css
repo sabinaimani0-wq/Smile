@@ -215,7 +215,7 @@ main {
 }
 #popupContent{
   background:white;
-  padding:20px auto;
+  padding:20px ;
   border-radius:10px;
   width: 100px;
   max-width: 400px;
