@@ -1,23 +1,23 @@
-// get popup elements
+
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("moodForm");
+  // form section
+  const form = document.getElementById("popupForm");
 
   if (form){
     form.addEventListener("submit",(event) =>{
       event.preventDefault();
-      const mood = document.getElementById("popupMood").value;
+      const mood = document.getElementById("popupmood").value;
       const duration = document.getElementById("popupDuration").value;
       const result = document.getElementById("popupResult");
-    } 
-    )
-  }
-
-    // form validation
+    
+      // form validation
     if (mood === "" || duration === "") {
       result.textContent = "Please fill in all fields.";
       result.style.color = "red";
       return;
     }
+
+    
     // save on local storage
 
     localStorage.setItem("mood", mood);
@@ -253,17 +253,18 @@ Exercise releases endorphins that improve mood.
   };
   
   // DISPLAY ADVICE
-  const adviceText = document.getElementById("notepad")
+  const adviceText = document.getElementById("advicetext");
   if (adviceText && savedMood) {
     adviceText.textContent = advice[savedMood];
   }
   
   // notepad
-  const notepad = document.getElementById("notepad")
+  const notepad = document.getElementById("notepad");
 
   if (notepad){
-    notepad.value = localStorage("input",() =>{
+
+    notepad.value = localStorage.getItem("notepad")||"";
+
+    notepad.addEventListener("input",() =>{
       localStorage.setItem("notepad",notepad.value);
-    }
-    );
-  }
+    });}

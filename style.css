@@ -35,12 +35,9 @@
 nav {
   background-color: rgb(22, 189, 192);
   padding: 20px;
-  margin: 0px 5px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 50px;
-  max-width: 1000px;
   font-family: "Arial", sans-serif;
   font-size: large;
 }
@@ -147,13 +144,14 @@ main {
  }
  select,input,textarea{
   width: 100px;
-  padding: 20px;
-  border-radius: 20px;
+  max-width: 500px;
+  padding: 15px;
+  border-radius: 14px;
   font-size: 16px;
-  margin: 30px 20px;
+  margin: 10px 0;
  }
  textarea{
-  min: height 200px;
+  min-height: 200px;
   resize: vertical;
  }
 
@@ -167,7 +165,6 @@ main {
   justify-content: center;
   min-height: 100px;
   padding: 20px;
-  margin-top: auto;
 }
 #notpaddescription {
   font-family: "Arial", sans-serif;
