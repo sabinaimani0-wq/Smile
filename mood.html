@@ -1,60 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Smile</title>
+  
   <link rel="stylesheet" href="./style.css">
+
 </head>
+
+
 <body>
+
+
   <!-- header section -->
   <header >
-    <div>
+
       <h1>
+
         <strong> Mood</strong>  
+      
       </h1>
-    </div>
-  </header>
+  
+    </header>
+
   <!-- navigation bar -->
   <nav>
+
     <a href="./index.html">About</a>
+    
     <a href="./mood.html">Mood</a>
+   
     <a href="./help.html">Help</a>
+  
   </nav>
+
 <main>
-  <section class="moodform">
-    <h2 class="moodformdescription">
-      Tell us how you are feeling by filling out this form:
+
+  <!-- Dusplay current mood -->
+  <section id="displayMoodSection">
+    <h2>
+     Your Current Mood:
     </h2>
-    <form action="">
-      How are you feeling today? <br>
-      <input type="text" name="mood" id="mood" placeholder="Pick one of the moods below"><br>
-      How long have you been feeling this way? <br>
-      <input type="text" name="duration" id="duration" placeholder="Put the duration of your mood here"><br>
-    </form>
-    <button class="moodformbutton">Submit</button>
+
+    <p id="displayMood"></p>
+
+    <p id="displayDuration"></p>
+
   </section>
 
+<!-- Notepad Section -->
   <section id="notepadcontainer">
+
     <p id="notpaddescription">
+
       Write out your thoughts to releave some pressure from your mind. <br> Just use this space to vent out some of your feelings and thoughts. <br> It is a safe space for you to express yourself without any judgement.
+    
     </p>
-    <textarea placeholder="Write out your thoughts here" id="notepad"></textarea>
+
+    <textarea placeholder="Write out your thoughts here" id="notepad">
+
+    </textarea>
+
   </section>
 
   <!-- Advice Section -->
-  <section>
+
+  <section id="adviceSection">
+
     <h2 id="adviceheader">
+
       Use this advice to feel a little better:
+
     </h2>
+
     <p id="advicetext"></p>
+
   </section>
 
   <!-- link mood.html to help.html -->
   <section>
+
     <a href="./help.html" class="helpbutton">Click here for further help</a>
+  
   </section>
+
 </main>
+
+<script src="./code.js"></script>
 
 </body>
 </html>
