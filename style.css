@@ -1,17 +1,27 @@
 /* for index.html */
 
+* {
+  box-sizing: border-box;
+}
+
 /* Logo styles */
 .logosection {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: rgb(85, 252, 255);
+  padding: 20px;
+  gap: 10px;
+  text-align: center;
 }
 .logo {
   width: 130px;
   height: 130px;
-  border-radius: 100px;
-  border-color: black;
-  margin-right: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #000000;
+  margin: 0 auto;
 }
 .logodescription {
   font-family: "Arial", sans-serif;
@@ -19,25 +29,32 @@
   font-size: large;
   text-align: center;
 }
+
 /* Navigation bar styles */
 nav {
   background-color: rgb(22, 189, 192);
-  padding: 20px 20px;
-  margin: 20px 50;
-  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  max-width: 1000px;
   font-family: "Arial", sans-serif;
   font-size: large;
 }
 nav a {
   color: #000000;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0;
+  padding: 10px 15px;
+  white-space: nowrap;
 }
 nav a:hover {
   color: #ffffff;
 }
+
 /* Main content styles */
 main {
   display: flex;
@@ -46,16 +63,7 @@ main {
   justify-content: center;
   flex: 1;
 }
-body {
-  display: flex;
-  margin: 0;
-  flex-direction: column;
-  font-family: "Arial", sans-serif;
-  background-image: url(./background\ for\ smile\ website.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
+
 .aboutdescription {
   font-family: "Arial", sans-serif;
   font-size: 19px;
@@ -68,7 +76,6 @@ body {
   font-size: 40px;
   color: #000000;
   text-align: center;
-
 }
 .featurestitle {
   font-family: "Arial", sans-serif;
@@ -95,18 +102,67 @@ body {
   text-align: center;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  padding: 20px 5px;
+  padding: 20px 50px;
   font-size: large;
   background-color: rgb(22, 189, 192);
   color: #000000;
   cursor: pointer;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .moodbutton:hover {
   background-color: rgb(85, 252, 255);
   color: #000000;
+}
+/* =========================
+   TABLET (≤ 768px)
+========================= */
+@media (max-width: 768px) {
+  .abouttitle,
+  .featurestitle,
+  .endofpagetitle {
+    font-size: 30px;
+  }
+
+  .aboutdescription,
+  .featuresdescription {
+    font-size: 16px;
+  }
+
+  nav {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* =========================
+   MOBILE (≤ 480px)
+========================= */
+@media (max-width: 480px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .abouttitle,
+  .featurestitle,
+  .endofpagetitle {
+    font-size: 24px;
+  }
+
+  .aboutdescription,
+  .featuresdescription {
+    font-size: 14px;
+  }
 }
 
 /* for mood.html */
@@ -133,7 +189,7 @@ body {
   background-color: #ece8e8;
 }
 .moodformbutton {
-    align-self: center;
+  align-self: center;
   width: 100px;
   height: 40px;
   font-size: medium;
@@ -168,9 +224,9 @@ body {
 }
 /* make the textarea look like a book */
 textarea {
-  width: 80%;
+  width: 100%;
   max-width: 800px;
-  height: 300px;
+  min-height: 250px;
   padding: 20px;
   font-size: 18px;
   line-height: 40px;
@@ -187,6 +243,7 @@ textarea {
 /* background image for the three sections */
 body {
   display: flex;
+  min-height: 100vh;
   margin: 0;
   flex-direction: column;
   font-family: "Arial", sans-serif;
@@ -195,22 +252,23 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
-#adviceheader{
-    text-align: center;
-    font-family: "Arial", sans-serif;
-    color: #000000;
-    font-size: 30px;
+#adviceheader {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #000000;
+  font-size: 30px;
 }
-.helpbutton{
+.helpbutton {
   text-align: center;
   text-decoration: none;
   font-family: Arial, sans-serif;
