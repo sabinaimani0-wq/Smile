@@ -1,10 +1,9 @@
-/* for index.html */
+    /* for index.html */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Logo styles */
 .logosection {
   display: flex;
@@ -12,8 +11,9 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(85, 252, 255);
-  padding: 10px;
-  gap: 10px;
+  padding: 5px;
+    gap: 5px;
+    line-height: 60px;
   text-align: center;
 }
 .logo {
@@ -27,7 +27,7 @@
 .logodescription {
   font-family: "Arial", sans-serif;
   color: #000000;
-  font-size: large;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -37,9 +37,9 @@ nav {
   padding: 20px;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   font-family: "Arial", sans-serif;
-  font-size: large;
+  font-size: 24px;
 }
 nav a {
   color: #000000;
@@ -57,34 +57,50 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  flex: 1;
+  gap: 30px;
+  padding: 20px 30px;
 }
 
 .card{
-  padding:25px;
-  margin-bottom: 25px;
-  border-radius: 15px;
+   width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 20px;
+  line-height: 1.8;
 }
 .card h2{
   margin-bottom: 15ps;
   color: #072194;
 }
 
+/* about section */
+.abouttitle{
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+.aboutdescription{
+  text-align: justify;
+  font-size: 19px;
+  margin-top: 30px;
+}
 /* buttons */
 .moodbutton {
   text-align: center;
   text-decoration: none;
   font-family: Arial, sans-serif;
-  padding: 20px 50px;
+  align-items: center;
+  padding: 20px 15px;
   font-size: large;
   background-color: rgb(22, 189, 192);
   color: #000000;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   display: block;
   margin: 20px auto;
+  object-position:center ;
 }
 .moodbutton:hover {
   background-color: rgb(85, 252, 255);
@@ -130,24 +146,24 @@ main {
   .endofpagetitle {
     font-size: 24px;
   }
-
-  .aboutdescription,
-  .featuresdescription {
-    font-size: 14px;
-  }
 }
+
+
  /* form */
+ 
  #popupForm{
   display: flex;
   flex-direction: column;
   gap: 15px;
+  font-size: 19px;
  }
  select,input,textarea{
-  width: 100px;
+  width: 300px;
   max-width: 500px;
-  padding: 15px;
-  border-radius: 14px;
+  padding: 5px;
+  border-radius: 60px;
   font-size: 16px;
+  text-align: center;
   margin: 10px 0;
  }
  textarea{
@@ -165,11 +181,11 @@ main {
   justify-content: center;
   min-height: 100px;
   padding: 20px;
+  margin-top: 1px;
 }
 #notpaddescription {
   font-family: "Arial", sans-serif;
   color: #000000;
-  font-weight: bold;
   font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
@@ -209,12 +225,21 @@ body {
   height: 100%;
   margin: 0;
 }
-
-#adviceheader {
-  text-align: center;
+#displayMood,
+#displayDuration{
+font-size: 35px;
+text-align: center;
+line-height: 50px;
+}
+.card h2{
+text-align: center;
+font-size: 30px;
+color: #000000;
+}
+#advicetext {
   font-family: "Arial", sans-serif;
   color: #000000;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /* help section */
@@ -228,28 +253,34 @@ header {
 }
 .sitedescription {
   font-family: "Arial", sans-serif;
-  color: #000000;
+  color: #bd1c1c;
   text-align: center;
   font-size: 30px;
   margin-top: 50px;
 }
 .sitesforhelp {
   font-family: "Arial", sans-serif;
-  color: #000000;
+  color: #02373c;
   font-size: 20px;
   margin-top: 20px;
-  line-height: 29px;
+  line-height: 30px;
 }
 .sitesforhelp a {
-  color: #0b1851;
+  color: #000000;
   text-decoration: none;
 }
 .sitesforhelp a:hover {
   color: rgb(233, 37, 16);
 }
+.contactsforhelp{
+  line-height: 30px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
 ul {
   list-style-type: square;
   list-style-position: inside;
+  font-size: 20px;
 }
 .contactsection {
   font-family: "Arial", sans-serif;
@@ -269,9 +300,10 @@ ul li::marker {
   font-size: 30px;
   margin-top: 50px;
 }
+
 footer{
   text-align: center;
   padding: 30px;
-  background-color: blueviolet;
+  background-color: rgb(4, 3, 5);
   color: rgb(229, 135, 13);
-}
+  }
