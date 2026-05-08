@@ -30,7 +30,7 @@ Smile is a simple web application designed to help users track their daily moods
 
 ## Known Bugs
 
-- None currently reported. If you encounter any issues, please open an issue on GitHub.
+- After chosing your mood it does not delete it's self automatically nor does the notepad delete any notes written on it after writing on it
 
 ## Contributing
 
