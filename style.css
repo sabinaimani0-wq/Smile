@@ -110,6 +110,10 @@ main {
 /* Responsive section */
 /* TABLET (≤ 768px) */
 @media (max-width: 768px) {
+  .logo{
+align-items: center;
+  }
+
   .abouttitle,
   .featurestitle,
   .endofpagetitle {
@@ -118,7 +122,7 @@ main {
 
   .aboutdescription,
   .featuresdescription {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   nav {
@@ -139,6 +143,7 @@ main {
   .logo {
     margin-right: 0;
     margin-bottom: 10px;
+    align-items: center;
   }
 
   .abouttitle,
@@ -186,7 +191,7 @@ main {
 #notpaddescription {
   font-family: "Arial", sans-serif;
   color: #000000;
-  font-size: 20px;
+  font-size: 21px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -227,7 +232,7 @@ body {
 }
 #displayMood,
 #displayDuration{
-font-size: 35px;
+font-size: 30px;
 text-align: center;
 line-height: 50px;
 }
