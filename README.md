@@ -1,5 +1,7 @@
 # Smile - Mood Tracking Web App
 
+## Authour Imani Sabina
+
 ## Project Overview
 
 Smile is a simple web application designed to help users track their daily moods and access mental health resources. It provides an easy-to-use interface for logging emotions, reflecting on thoughts, and finding helpful advice or professional support. The app aims to promote mental wellness by encouraging self-awareness and providing quick access to helpful tools.
@@ -23,14 +25,14 @@ Smile is a simple web application designed to help users track their daily moods
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/smile.git
+   git clone https://github.com/smile.git
    ```
 2. Open `index.html` in your web browser to start using the app.
 3. No server setup required; it's a static website.
 
 ## Known Bugs
 
-- After chosing your mood it does not delete it's self automatically nor does the notepad delete any notes written on it after writing on it
+* After chosing your mood it does not delete it's self automatically nor does the notepad delete any notes written on it after writing on it
 
 ## Contributing
 
